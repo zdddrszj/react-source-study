@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/stage-2"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "createElement",  // default pragma is React.createElement
+        "pragmaFrag": "Fragment" // default is React.Fragment
+      }
+    ],
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
